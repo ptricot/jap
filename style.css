@@ -1,0 +1,143 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  border: 0;
+}
+body {
+  display: flex;
+  background-color: #333;
+}
+
+/* ids */
+#menu {
+  height: 100%;
+  width: 250px;
+  min-width: 250px;
+  box-shadow: 10px 10px 5px #111;
+}
+#content {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  font-size: 150% !important;
+  text-align: center;
+}
+#question {
+  width: 80%;
+  margin: 1%;
+  background-color: #777;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#answer {
+  width: 80%;
+  margin: 1%;
+  background-color: #777;
+  min-height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#input {
+  background-color: #aaa;
+  border: none;
+  height: 30px;
+  font-size: 120%;
+}
+#correction {
+  font-size: 180%;
+  margin: 0.5em;
+}
+#subCorrection {
+  margin: 0.5em;
+}
+#canvas {
+  border: 1px solid #333;
+  border-radius: 3px;
+  margin: 1em;
+  background-color: #bbb;
+  cursor: url(pencil.png), auto;
+}
+#card-container {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  overflow-y: auto;
+}
+
+/* classes */
+.tile {
+  font-size: 120%;
+  width: 75%;
+  cursor: pointer;
+}
+.card {
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 4px;
+  background-color: #777;
+}
+.word-card {
+  height: 200px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+.selected-card {
+  border: 3px solid #dc2;
+}
+.box {
+  background-color: #E777;
+  border: 2px solid grey;
+}
+.divider {
+  height: 1em;
+}
+.main-text {
+  font-size: 400%;
+  margin: 0.5em;
+}
+.main-sub-text {
+  font-size: 300%;
+  margin: 0.5em;
+}
+.sub-text {
+  font-size: 200%;
+  margin: 0.5em;
+}
+.sub-sub-text {
+  font-size: 120%;
+  margin: 0.5em;
+}
+.correct-answer {
+  color: #8e8;
+}
+.wrong-answer {
+  color: #e88;
+}
+.neutral-answer {
+
+}
+.answer-write {
+  height: 300px;
+}
+.button {
+  height: 30px;
+  width: 100px;
+  margin: 1em;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jap</title>
+</head>
+
+<!-- -----------------------------------
+              css
+------------------------------------ -->
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- -----------------------------------
+              html
+------------------------------------ -->
+
+<body>
+
+  <!-- Menu -->
+  <div id="menu">
+    <div id="title" class="tile">
+      JAP
+    </div>
+    <div class="divider"></div>
+    <div class="tile card" onclick="startProg(1)">
+      Kanjis & writing to meaning
+    </div>
+    <div class="tile card" onclick="">
+      Meaning to writing
+    </div>
+    <div class="tile card" onclick="startProg(3)">
+      Meaning to kanjis
+    </div>
+    <div class="divider"></div>
+    <div class="tile card" onclick="manageDataset()">
+      Manage datasets
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div id="content"></div>
+
+</body>
+
+<!-- -----------------------------------
+              js
+------------------------------------ -->
+
+<script src="./vocN5.js"></script>
+<script src="./main.js"></script>
+<script src="./crud.js"></script>
+<script src="./canvas.js"></script>
+<script src="./programs.js"></script>
+<script src="./settings.js"></script>
+
+<!-- 
+  TODO : 
+   - SQLite database rather than this localStorage thing
+   - Better dataset management
+   - More games
+ -->
+
+</html>
